@@ -30,7 +30,7 @@ export const Jobs = ()=>{
     console.log(id,"id")
 
     useEffect(()=>{
-       axios.get(`http://localhost:8080/jobs/get/${id}`).then(({data})=>{
+       axios.get(`https://jobsforbakckend.herokuapp.com/jobs/get/${id}`).then(({data})=>{
               setSingle(data)
        })
     },[])
